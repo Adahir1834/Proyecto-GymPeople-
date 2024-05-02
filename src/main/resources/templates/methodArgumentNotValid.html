@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>
+		Errors:
+	</h1>
+	<ul th:each="error : ${errors}">
+		<li th:text="${error.key} + ' : ' + ${error.value}"></li>
+	</ul>
+	<h1>Exception:</h1>
+	<p th:text="${exception.message}"></p>
+</body>
+</html>
